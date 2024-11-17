@@ -1,0 +1,180 @@
+:root {
+    --terminal-green: #33ff33;
+    --terminal-black: #000000;
+}
+
+body {
+    background-color: var(--terminal-black);
+    color: var(--terminal-green);
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.terminal {
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.prompt {
+    position: relative;
+    margin-top: 10px;
+}
+
+.prompt-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.prompt-text {
+    color: var(--terminal-green);
+    white-space: nowrap;
+    margin-right: 8px;
+}
+
+.command-input {
+    background: transparent;
+    border: none;
+    color: var(--terminal-green);
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    outline: none;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    caret-color: var(--terminal-green);
+}
+
+.output {
+    padding-bottom: 20px;
+    white-space: pre-wrap;
+}
+
+.output div {
+    min-height: 1.2em;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+.content-line {
+    padding-left: 2px;
+    line-height: 1.3;
+}
+
+.post-content {
+    margin-left: 15px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    border-left: 1px solid var(--terminal-green);
+    padding-left: 10px;
+}
+
+.category-section {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: var(--terminal-green);
+    font-weight: bold;
+}
+
+.post-container {
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+
+.clickable-post {
+    color: var(--terminal-green);
+    cursor: pointer;
+    padding-left: 2px;
+}
+
+/* Admin styles */
+.admin-panel {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    color: var(--terminal-green);
+    padding: 20px;
+    border: 1px solid var(--terminal-green);
+}
+
+.admin-panel input[type="text"],
+.admin-panel input[type="password"],
+.admin-panel textarea,
+.admin-panel #editor {
+    background: #000;
+    color: var(--terminal-green);
+    border: 1px solid var(--terminal-green);
+    font-family: 'Courier New', monospace;
+}
+
+.admin-panel button {
+    background: var(--terminal-green);
+    color: #000;
+    border: none;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+}
+
+.admin-panel .ql-toolbar,
+.admin-panel .ql-container {
+    border-color: var(--terminal-green) !important;
+    background: #000;
+}
+
+.admin-panel .ql-editor {
+    color: var(--terminal-green);
+}
+
+.admin-panel a {
+    color: var(--terminal-green);
+    text-decoration: none;
+}
+
+.admin-panel a:hover {
+    text-decoration: underline;
+}
+
+.admin-panel h2, 
+.admin-panel h3 {
+    border-bottom: 1px solid var(--terminal-green);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.admin-panel .post {
+    border: 1px solid var(--terminal-green);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.admin-panel form {
+    margin-bottom: 20px;
+}
+
+.admin-panel input[type="text"],
+.admin-panel input[type="password"],
+.admin-panel textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.admin-panel button {
+    padding: 8px 16px;
+    margin-right: 10px;
+}
+
+.alert {
+    background: #2a2a2a;
+    border: 1px solid var(--terminal-green);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.clickable-post:hover {
+    text-decoration: underline;
+}

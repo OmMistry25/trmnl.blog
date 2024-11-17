@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="admin-panel">
+    <h2>Edit Profile</h2>
+    <a href="{{ url_for('admin_dashboard') }}" class="back-link">Back to Dashboard</a>
+    
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    
+    <form method="POST">
+        <div class="form-group">
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" rows="3" required>{{ profile.bio }}</textarea>
+        </div>
+        <div class="form-group">
+            <label for="philosophy">Philosophy:</label>
+            <textarea id="philosophy" name="philosophy" rows="3" required>{{ profile.philosophy }}</textarea>
+        </div>
+        <button type="submit">Update Profile</button>
+    </form>
+</div>
+{% endblock %}
